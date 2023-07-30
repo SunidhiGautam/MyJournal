@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylef.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+   <style type="text/css">
+   	body{
+   		background: url('loginbgg.png');
+   		background-repeat: no-repeat;
+   		background-color: #97E2F0;
+   		background-size: cover;
+
+   	}
+
+   	.form-class{
+   		border-radius: 8px;
+   		margin-top: 20px;
+   		border: 2px solid #F99B7D;
+   		padding-top: 10px;
+   		padding-bottom: 10px;
+   		background: #fff;
+   		box-shadow: 3px 6px 10px ;
+   		padding-bottom: 20px;
+   		padding-top: 20px;
+   		margin-top: 20px;
+
+
+
+   	}
+   </style>
+</head>
+<body>
+	<header>
+			<a href="#" class="logo"><img src="MyJournal1.png"></a>
+		<nav class="navbar">
+			
+		    <ul>
+				<li><a href="Journal.html" class="active">Home</a></li>
+				<li><a href="about.html">About </a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="login.html">Login</a></li>
+				
+
+			</ul>
+
+		</nav>
+
+		</header>
+
+		<div class="container-fluid" style="background: #F99B7D; padding-top: 80px; padding-left: 620px; border-radius: 6px;">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="login.png" style="height: 60px;">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row"  style="padding-left: 280px; padding-top:100px">
+			<div class="col-md-8" ></div>
+			<div class="col-md-8 form-class">
+				<form action="loginform">
+					<div class="row">
+						<div class="col-md-12">
+							<label style="font-size: 20px; font-family: serif;">Email-ID</label>
+							<input type="email" name=" email" class="form-control" placeholder=" Email" id="email" required style="height: 40px; margin: 6px;">
+						</div>
+
+						<div class="col-md-12">
+							<label style="font-size: 20px; font-family: serif;">Password</label>
+							<input type="password" name="password" class="form-control" placeholder="Password" id="Password" minlength="8" required style="height: 40px; margin: 6px;">
+						</div>
+
+						<div class="col-md-12" style="margin:20px; padding-top:20px  ">
+	                      <button type="submit" class="btn btn-primary" name="submit_button" id="submitbtn" style="width: 160px; height: 58px;" ><a href="success.html">
+	                      	 Login </a></button>
+                            </div> 	
+                            <div class="col-md-12" style="height:20px">
+                            	<span>New User?</span> <a href="register.html">Register Here </a> 
+                            </div>
+						</div>
+				</form>
+			</div>
+	    </div>
+
+	    <script type="text/javascript">
+
+		var isValid = true;
+     $('input,textarea,select').filter('[required]:visible').each(function() {
+      if ( $(this).val() === '' )
+         isValid = false;
+    });
+    if( isValid ) {
+       $('#submitbtn').prop('disabled', false);
+    } else {
+       $('#submitbtn').prop('disabled', true);
+    };
+    $('#submitbtn').click(function() {
+        var isValid = true;
+         $('input,textarea,select').filter('[required]:visible').each(function() {
+          if ( $(this).val() === '' )
+             isValid = false;
+        });
+        if( isValid ) {
+           $("#loginform")[0].submit(); 
+       };
+
+    });
+
+    //When a input is changed check all the inputs and if all are filled, enable the button
+     $('input,textarea,select').change(function() {
+        var isValid = true;
+         $('input,textarea,select').filter('[required]:visible').each(function() {
+          if ( $(this).val() === '' )
+             isValid = false;
+        });
+        if( isValid ) {
+           $('#submitbtn').prop('disabled', false);
+
+        } else {
+           $('#submitbtn').prop('disabled', true);
+
+        };
+    });
+
+
+	
+	</script>
+
+</body>
+</html>
