@@ -1,0 +1,230 @@
+*{
+	
+	text-transform: capitalize;
+	text-decoration: none;
+	outline: none;
+	margin:0; padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background:   linear-gradient(to bottom,#FFDEDE, #FAF0E4) ;
+	background-size: cover  ;
+	background-repeat: no-repeat  ;
+	margin: 0%;
+
+}
+
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+header{
+	width:100%;
+	background: #FF8551;
+	position: fixed;
+	top: 0px; left: 50%;
+	transform: translateX(-50%);
+	display:flex;
+	align-items: centre;
+	justify-content: space-between;
+	padding:0px 32px;
+	z-index: 1000;
+	border-bottom:solid #9BCDD2 ;
+	border-radius:8px;
+	
+
+}
+
+header .navbar ul{
+	display:flex;
+	align-items: centre;
+	justify-content: space-between;
+	list-style: none;
+}
+
+header .navbar ul li{
+	margin: 0 16px;
+}
+
+header .navbar ul li a{
+	font-size: 20px;
+	color: whitesmoke;
+	font-family: serif;
+	transition: .2s;
+}
+
+header .navbar ul li .active,
+
+header .navbar ul li a:hover{
+	color: #006064;
+}
+
+header .logo{
+	height: 70px;
+	width: 90px;
+}
+
+
+.firstopt{
+	margin: 0px;
+	padding-top: 80px;
+	border-bottom: solid #FFA559;
+	border-top: solid #FFA559;
+}
+
+.secondopt{
+	margin: 0px;
+	padding-top: 10px;
+	border-bottom: solid #FFA559;
+	border-top: solid #FFA559;
+
+}
+
+.thirdopt{
+	margin: 0px;
+	padding-top: 10px;
+	border-bottom: solid #FFA559;
+	border-top: solid #FFA559;
+	
+}
+
+.aboutus{
+  font-family: serif !important;
+  font-size: 50px !important;
+  padding-left: 45% !important;
+  background: #FECD70 !important;
+  padding-top: 90px !important;
+
+}
+
+.content{
+	background: none !important;
+	font-family: sans-serif !important ;
+	padding-left: 25px!important;
+	padding-right:25px !important;
+}
+
+.vision{
+	font-family: sans-serif !important;
+}
+
+
+.container{
+	text-align: centre;
+	margin-top: 0px;
+	padding-left: 55px;
+
+
+}
+
+.container img{
+		height: 423px;
+}
+
+
+.btn{
+	position: absolute;
+  top: 53%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  padding: 12px 30px;
+  border: solid #F1C27B;
+  cursor: pointer;
+  font-family: serif;
+  border-radius: 5px;	
+
+}
+
+.btn1{
+	color: whitesmoke;
+	background-color: #F29727;
+
+}
+
+.btn1:hover{
+	color: #E9B384;
+
+}
+
+.btn2{
+	color: #whitesmoke;
+	background-color: #DB005B;
+	left: 48%;
+}
+
+.btn2:hover{
+	color: #FEA1A1;
+}
+
+.btn3{
+	color:whitesmoke;
+	background-color: #19A7CE;
+	left: 49%;
+}
+
+.btn3:hover{
+	color: #AFD3E2;
+}
+
+    
+.bookinfo{
+	margin: 10px;
+	padding-top: 30px;
+  width: 99%;
+	padding-left: 80px;
+	padding-bottom: 30px;
+
+
+}
+
+h2{
+	font-family: serif;
+}
+
+h1{
+	font-family: unset;
+}
+
+.login{
+	padding-left: 230px;
+}
+
+.book{
+	padding-top:40px;
+}
+
+.form-class{
+   		border-radius: 8px;
+   		margin-top: 20px;
+   		border: 2px solid #F99B7D;
+   		padding-top: 10px;
+   		padding-bottom: 10px;
+}
+
+.Genre img{
+	height: 300px;
+	width: 300px;
+
+}
+
+.Genre  {
+	padding-left: 40px;
+	padding-right: 50px;
+	margin: 20px
+
+}
+
+.Genre button{
+	position: absolute;
+  color: white;
+  font-size: 25px;
+  border: solid #F1C27B;
+  cursor: pointer;
+  font-family: serif;
+  border-radius: 5px;
+ 
+}
